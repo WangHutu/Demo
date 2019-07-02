@@ -1,25 +1,25 @@
 <template>
   <div>
-    <home-navbar></home-navbar>
-    <page-header></page-header>
-    <page-home></page-home>
+    <home-headerbar></home-headerbar>
+    <home-swiper></home-swiper>
+    <home-header></home-header>
   </div>
 </template>
 
 <script>
 
-import homeNavbar from "./components/homeNavbar";
-import pageHeader from "./components/pageHeader";
-import pageHome from "./components/pageHome"
+import homeHeaderbar from "./components/homeHeaderbar";
+import homeSwiper from "./components/homeSwiper";
+import homeHeader from "./components/homeHeader"
 export default {
   name: "Home",
   data() {
     return {};
   },
   components: {
-    homeNavbar,
-    pageHeader,
-    pageHome
+    homeHeaderbar,
+    homeSwiper,
+    homeHeader
   }
 };
 </script>

@@ -11,17 +11,16 @@
 
 <script>
   export default {
-    name: 'pageHeader',
-    data () {
+    name: 'homeSwiper',
+    data() {
       return {
-        input:''
+        input: ''
       }
     },
     components: {
 
     }
   }
-
 </script>
 
 <style>

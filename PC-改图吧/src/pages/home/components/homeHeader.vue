@@ -52,7 +52,7 @@
 
 <script>
 export default {
-    name:"pageHome",
+    name:"homeHeader",
     data () {
         return {
             homeCar:[

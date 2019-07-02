@@ -19,7 +19,7 @@
 </template>
 <script>
 export default {
-  name: "homNavbar"
+  name: "homeHeaderbar"
 };
 </script>
 <style>
