@@ -1,0 +1,135 @@
+* {
+    margin:0;
+    padding:0;
+}
+/* 第一层  开始游戏按钮 */
+.startPage{
+    display:none;
+    width:100%;
+    height:1000px;
+    z-index:999;
+    position:absolute;
+    left:0;
+    top:0;
+}
+/* 开始游戏按钮样式 */
+.startPage .startBtn {
+    height:170px;
+    width:200px;
+    background-image:url('./img/startGame.png');
+    background-size:100% 100%;
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+/* 第二层 主界面：包含左边部分  和主体部分 */
+.wrapper {
+    width:100%;
+    height:1000px;
+    background-image:url('./img/bg.jpg');
+    background-size:100% 100%;
+    position:relative;
+}
+/* 主界面的左边部分  显示暂停和开始按钮 */
+.wrapper .left-side{
+    width:24%;
+    position:absolute;
+    height:1000px;
+}
+/* 暂停/开始 按钮样式 */
+.wrapper .left-side img {
+    display:none;
+    margin-left:50px;
+    margin-top:50px;
+}
+/* 主界面的主体部分  */
+.wrapper .main {
+    position:absolute;
+    left:25%;
+    width:50%;
+    height:90%;
+}
+/* 主界面的主体部分 的上方部分 计分部分 */
+.wrapper .main .header {
+    width:100%;
+    height:80px;
+    text-align:center;
+}
+/* 主界面的主体部分 的上方部分 计分部分样式 */
+.wrapper .main .header .score {
+    line-height:80px;
+    color:#ddd;
+    font-size:20px;
+    font-weight:bolder;
+}
+/* 主界面的主体部分 的主要部分  游戏活动界面 */
+.wrapper .main .content{
+    position:absolute;
+    width:78%;
+    height:35.5%;
+    left:10.5%;
+    top:34.5%;
+    border:1px solid red;
+}
+/* 第三层 游戏结束层 */
+.loser{
+    display:none;
+    position:absolute;
+    width:40%;
+    height:1000px;
+    top:0;
+    left:30%;
+}
+/* 游戏结束的背景样式 */
+.loser .con {
+    background-image:url('./img/loserP.jpg');
+    background-size:100% 100%;
+    height:300px;
+    width:400px;
+    position:absolute;
+    margin-left:-200px;
+    margin-top:-180px;
+    left:50%;
+    top:50%;
+    border-radius: 20px;
+}
+/* 游戏结束 背景上的计分显示部分 */
+.loser .con .loserScore {
+    display:block;
+    height:30px;
+    width:40px;
+    position:absolute;
+    top:42%;
+    left:40%;
+    color:#222;
+    font-size:30px;
+    font-weight:bolder;
+}
+/* 游戏结束 背景上的 关闭按钮部分 */
+.loser .con .close {
+    position:absolute;
+    top:0;
+    right:0;
+    height:40px;
+    width:40px;
+    background-image:url('./img/closeBtn.png');
+    background-size:100% 100%;
+    cursor: pointer;
+}
+/* 食物的样式 */
+.food{
+    background-image:url('./img/apple.png');
+    background-size:100% 100%;
+}
+.head {
+    background-image:url('./img/head.png');
+    background-size:100% 100%;
+}
+.body {
+    background-image:url('./img/body.png');
+    background-size:100% 100%;
+}

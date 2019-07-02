@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原生JS贪吃蛇</title>
+    <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+    <!-- 第一层 -->
+    <div class="startPage" id="startPage">
+        <!-- 开始游戏按钮 -->
+        <div class="startBtn"></div>
+    </div>
+    <!-- 第二层游戏包含背景 -->
+    <div class="wrapper">
+        <!-- 左边部分 有开始/暂停按钮 -->
+        <div class="left-side">
+            <img src="./img/pause.png">
+        </div>
+        <!-- 中间部分包含游戏主界面 上方计分部分 -->
+        <div class="main">
+            <!-- 上方计分部分 -->
+            <div class="header">
+                <!-- 计分的文字部分 -->
+                 <div class="score">
+                     分数：
+                     <!-- 计分的动态部分 -->
+                     <span id="score"></span>
+                 </div>
+            </div>
+            <!-- 主游戏界面 -->
+            <div class="content" id="content"></div>
+        </div>
+    </div>
+    <!-- 第三层结束层 -->
+    <div class="loser">
+        <!-- 结束提示图片层 -->
+        <div class="con">
+            <!-- 结束的关闭按钮 -->
+            <div class="close"></div>
+            <!-- 最后提示的分数 -->
+            <span class="loserScore"></span>
+        </div>
+    </div>
+
+
+    <script src="./demo.js"></script>
+</body>
+</html>
