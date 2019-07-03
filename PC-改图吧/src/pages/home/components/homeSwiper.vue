@@ -1,7 +1,15 @@
 <template>
-  <div class="pageHeader">
+  <div class="homeSwiper">
     <div class="headerSearch">
-      <div>
+      <div class="imgs">
+        <swiper :options="swiperOption">
+          <swiper-slide><img class="swiperImg" src="../../../assets/header_bj.jpg" alt=""></swiper-slide>
+          <swiper-slide><img class="swiperImg" src="../../../assets/swiper2.jpg" alt=""></swiper-slide>
+          <swiper-slide><img class="swiperImg" src="../../../assets/swiper3.jpg" alt=""></swiper-slide>
+          <div class="swiper-pagination"  slot="pagination"></div>
+        </swiper>
+      </div>
+      <div class="Search">
         <input class="headerSearchInput" v-model="input" placeholder="请输入标题、关键字、作品编号搜索"></input>
         <button type="button"></button>
       </div>
@@ -14,7 +22,17 @@
     name: 'homeSwiper',
     data() {
       return {
-        input: ''
+        input: '',
+        imgs:[
+          { id:1, imgSrc:require("../../../assets/header_bj.jpg")},
+          { id:2, imgSrc:require("../../../assets/swiper2.jpg")},
+          { id:3, imgSrc:require("../../../assets/swiper3.jpg")}
+        ],
+        swiperOption: {
+          pagination:'swiper-pagination',
+          loop:true,
+          autoplay : 3000
+        }
       }
     },
     components: {
@@ -30,32 +48,31 @@
     list-style:none;
     text-decoration:none;
   }
-  .pageHeader{
+  .homeSwiper{
     height:530px;
     width:1500px;
     margin:0 auto;
-    background: url('../../../assets/header_bj.jpg') no-repeat;
-    background-size:100% 100%;
   }
-  .pageHeader .headerSearch {
+  .homeSwiper .headerSearch {
     width:1500px;
-    height:480px;
+    height:530px;
     text-align:center;
-    line-height:480px;
+    line-height:530px;
     position:relative;
   }
-  .pageHeader .headerSearch>div {
+  .homeSwiper .headerSearch .Search {
     width:500px;
     height:50px;
     position:absolute;
     top:50%;
     left:50%;
     margin-left:-250px;
-    margin-top:-25px;
+    margin-top:-50px;
     text-align: center;
     line-height:50px;
+    z-index: 10;
   }
-  .pageHeader .headerSearch .headerSearchInput {
+  .homeSwiper .headerSearch .headerSearchInput {
     position:absolute;
     top:20px;;
     left:0;
@@ -66,7 +83,7 @@
     border:none;
     padding-left:10px;
   }
-  .pageHeader .headerSearch button {
+  .homeSwiper .headerSearch button {
     display: inline-block;
     position: absolute;
     right:0;

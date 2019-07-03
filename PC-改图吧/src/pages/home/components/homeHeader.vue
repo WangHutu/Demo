@@ -1,5 +1,5 @@
 <template>
-    <div class="home_wrap">
+    <div class="homeHeader">
         <div class="navTop">
             <el-button-group>
                 <el-button class="item itemlift">首页</el-button>
@@ -29,23 +29,6 @@
             <a href="javascript::" class="page">
                 点击查看更多... <span class="el-icon-arrow-right"></span>   
             </a>   
-        </div>
-        <div class="main">
-            <div class="main_top">
-                <h2>
-                    <a href="javascript::">节日设计</a>
-                </h2>
-                <p>
-                    <span class="el-icon-minus"></span>
-                    ADVERTISING
-                    <span class="el-icon-minus"></span>
-                </p>
-            </div>
-            <div class="main_page">
-                <div v-for="imgs in mainImg" :key="imgs.id" class="main_page_imgs">
-                    <img class="main_page_img" src="imgs.imgSrc" alt="" style="width:100%;height:100%; borderRadius:20px;">
-                </div>
-            </div>
         </div>
     </div>
 </template>
@@ -86,38 +69,40 @@ export default {
     html body {
         background-color: #f6f8f8;
     } 
-    .home_wrap {
+    .homeHeader {
         width:1200px;
         margin:0 auto;
         position:relative;
     }
-    .home_wrap .navTop {
+    .homeHeader .navTop {
         position:absolute;
         top:-180px;
         display: flex;
         width:1200px;
         height:45px;
         border-radius:30px 30px 0 0;
+        z-index: 10;
     }
-    .home_wrap .navTop .item {
+    .homeHeader .navTop .item {
         width:134px !important;
     }
-    .home_wrap .navTop .itemlift {
+    .homeHeader .navTop .itemlift {
     border-radius:10px 0 0 0;
     }
-    .home_wrap .navTop .itemright {
+    .homeHeader .navTop .itemright {
     border-radius:0 10px 0 0;
     }
-    .home_wrap .home {
+    .homeHeader .home {
         position: absolute;
         top:-140px;
         width:1200px;
+        z-index: 10;
     }
-    .home_wrap .home .homBunner {
+    .homeHeader .home .homBunner {
         text-align: center;
         background-color:#3ec4f0;
     }
-    .home_wrap .home .homeCard {
+    .homeHeader .home .homeCard {
         border-radius: 15px;
         padding:auto 20px;
         background:url('../../../assets/bunner_bj.jpg');
@@ -145,7 +130,7 @@ export default {
     .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
     }
-    .home_wrap .bottom {
+    .homeHeader .bottom {
         width:100%;
         line-height: 70px;
         position: absolute;
@@ -153,45 +138,11 @@ export default {
         text-align: center;
         background-color: #fff;
     }
-    .home_wrap .bottom .page {
+    .homeHeader .bottom .page {
         color:#333;
     }
-    .home_wrap .bottom .page:hover {
+    .homeHeader .bottom .page:hover {
         color:#f98722;
         margin-right:4px;
-    }
-    .home_wrap .main {
-        position: absolute;
-        top:350px;
-        width:100%;
-        height:100px;
-    }
-    .home_wrap .main .main_top {
-        display: inline-block;
-        height:100%;
-        width:100%;
-        text-align: center;
-        font-size:17px;
-    }
-    .home_wrap .main .main_top h2 a {
-        color:#f6911e;
-        line-height:30px;
-    }
-    .home_wrap .main .main_top h2 a:hover {
-        color:#f7ad59;
-    }
-    .home_wrap .main .main_top p {
-        margin-top:20px;
-    }
-    .home_wrap .main .main_page {
-        height:500px;
-    }
-    .home_wrap .main .main_page .main_page_imgs {
-        display: flex;
-        width:100%;
-    }
-    .home_wrap .main .main_page .main_page_imgs .main_page_img {
-        flex:1;
-        border:1px solid black;
     }
 </style>

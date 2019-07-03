@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 // 引入样式
 import 'element-ui/lib/theme-chalk/index.css'
+import 'swiper/dist/css/swiper.css'
 
 // 引入组件
 import 'element-ui/lib/index'
@@ -15,6 +17,8 @@ Vue.config.productionTip = false
 
 // 安装element-ui插件
 Vue.use(ElementUI)
+// 安装 VueAwesomeSwiper
+Vue.use(VueAwesomeSwiper)
 
 
 
