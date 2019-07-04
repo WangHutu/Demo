@@ -29,9 +29,10 @@
           { id:3, imgSrc:require("../../../assets/swiper3.jpg")}
         ],
         swiperOption: {
-          pagination:'swiper-pagination',
+          pagination:'.swiper-pagination',
           loop:true,
-          autoplay : 3000
+          autoplay : 3000,
+          speed:2500
         }
       }
     },
@@ -57,8 +58,14 @@
     width:1500px;
     height:530px;
     text-align:center;
-    line-height:530px;
     position:relative;
+  }
+  .homeSwiper .headerSearch .imgs .swiper-pagination {
+    position: absolute;
+    top:300px;
+  }
+  .homeSwiper .headerSearch .imgs .swiper-pagination-bullet {
+    background: #fff;
   }
   .homeSwiper .headerSearch .Search {
     width:500px;
@@ -72,7 +79,7 @@
     line-height:50px;
     z-index: 10;
   }
-  .homeSwiper .headerSearch .headerSearchInput {
+  .homeSwiper .headerSearch .Search .headerSearchInput {
     position:absolute;
     top:20px;;
     left:0;
@@ -83,7 +90,7 @@
     border:none;
     padding-left:10px;
   }
-  .homeSwiper .headerSearch button {
+  .homeSwiper .headerSearch .Search button {
     display: inline-block;
     position: absolute;
     right:0;
