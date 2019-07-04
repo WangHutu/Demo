@@ -71,17 +71,17 @@ export default {
     } 
     .homeHeader {
         width:1200px;
-        margin:0 auto;
-        position:relative;
+        position:absolute;
+        top:400px;
+        left:50%;
+        margin-left:-600px;
+        z-index: 10;
     }
     .homeHeader .navTop {
-        position:absolute;
-        top:-180px;
         display: flex;
         width:1200px;
         height:45px;
         border-radius:30px 30px 0 0;
-        z-index: 10;
     }
     .homeHeader .navTop .item {
         width:134px !important;
@@ -93,10 +93,7 @@ export default {
     border-radius:0 10px 0 0;
     }
     .homeHeader .home {
-        position: absolute;
-        top:-140px;
         width:1200px;
-        z-index: 10;
     }
     .homeHeader .home .homBunner {
         text-align: center;
@@ -133,8 +130,6 @@ export default {
     .homeHeader .bottom {
         width:100%;
         line-height: 70px;
-        position: absolute;
-        top:233px;
         text-align: center;
         background-color: #fff;
     }

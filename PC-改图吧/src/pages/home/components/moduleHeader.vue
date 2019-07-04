@@ -10,7 +10,6 @@
                 <span class="el-icon-minus"></span>
             </p>
         </div>
-        
     </div>
 </template>
 
@@ -24,8 +23,11 @@ export default {
     .moduleHeader {
         position: absolute;
         top:890px;
-        width:100%;
+        left:50%;
+        margin-left:-600px;
+        width:1200px;
         height:100px;
+        background:#f3f3f4;
     }
     .moduleHeader .moduleHeader_top {
         display: inline-block;

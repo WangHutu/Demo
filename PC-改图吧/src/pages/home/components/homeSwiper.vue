@@ -50,13 +50,13 @@
     text-decoration:none;
   }
   .homeSwiper{
-    height:530px;
+    height:512px;
     width:1500px;
     margin:0 auto;
   }
   .homeSwiper .headerSearch {
     width:1500px;
-    height:530px;
+    height:512px;
     text-align:center;
     position:relative;
   }
