@@ -51,10 +51,11 @@ export default {
         width:1200px;
         height:1150px;
         flex-wrap:wrap;
+        justify-content: space-around;
     }
     .moduleContent .contentMain .pic {
         display: inline-block;
-        flex:1;
+        width:280px;
     }
 
 
