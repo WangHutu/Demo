@@ -1,12 +1,12 @@
 <template>
-    <div class="moduleHeader">
+    <div class="moduleHeader" :class="typec">
         <div class="moduleHeader_top">
             <h2>
-                <a href="javascript::">{{title[0]}}</a>
+                <a href="javascript::">{{title}}</a>
             </h2>
             <p>
                 <span class="el-icon-minus"></span>
-                ADVERTISING
+                    ADVERTISING
                 <span class="el-icon-minus"></span>
             </p>
         </div>
@@ -18,29 +18,18 @@ export default {
     name:'moduleHeader',
     data() {
         return {
-            title:[
-
-                "节日设计",
-                "党建活动",
-                "电商淘宝",
-                "活动海报",
-                "办公文档",
-                "插图配图",
-            ]
+            
         }
-    }
+    },
+    props:['typec','title']
 }
 </script>
 
 <style>
     .moduleHeader {
-        position: absolute;
-        top:890px;
-        left:50%;
-        margin-left:-600px;
+        margin:0 auto;
         width:1200px;
         height:100px;
-        background:#f3f3f4;
     }
     .moduleHeader .moduleHeader_top {
         display: inline-block;

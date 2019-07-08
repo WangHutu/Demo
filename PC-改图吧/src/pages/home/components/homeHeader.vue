@@ -67,7 +67,7 @@ export default {
         text-decoration: none;
     }
     html body {
-        background-color: #f6f8f8;
+        background-color: #e9f0f0;
     } 
     .homeHeader {
         width:1200px;

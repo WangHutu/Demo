@@ -1,7 +1,7 @@
 <template>
   <div>
-    <module-header></module-header>
-    <module-content></module-content>
+    <module-header :typec="type" :title="title"></module-header>
+    <module-content :typec="type" :theme="theme"></module-content>
   </div>
 </template>
 
@@ -14,7 +14,8 @@ export default {
   components: {
     moduleHeader,
     moduleContent
-  }
+  },
+  props:['type','title','theme']
 };
 </script>
 

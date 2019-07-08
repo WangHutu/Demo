@@ -1,5 +1,5 @@
 <template>
-    <div class="moduleContent">
+    <div class="moduleContent" :class="typec">
         <div class="contentMain">
             <!-- <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="6"> -->
                 <div class="pic" v-for="item in theme" :key="item.id">
@@ -21,33 +21,16 @@ export default {
     name:'moduleContent',
     data() {
         return {
-            theme:[
-                { id:1, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:2, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:3, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:4, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:5, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:6, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:7, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:8, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:9, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:10, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:11, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")},
-                { id:12, name:'夜景摩天轮',imgSrc:require("../../../assets/theme.png")}
-            ]
         }
-    }
+    },
+    props:['typec','theme']
 }
 </script>
 
 <style>
     .moduleContent {
         width:1200px;
-        position: absolute;
-        top:991px;
-        left:50%;
-        margin-left:-600px;
-        background-color:#f4f4f5;
+        margin:-0 auto;
     }
     .moduleContent .contentMain {
         width:1200px;
@@ -55,10 +38,10 @@ export default {
     }
     .moduleContent .contentMain .pic {
         display: inline-block;
-        width:289px;
+        width:290.1px;
         text-align:center;
         background-color:#e9e9e9;
-        border-radius:10px;
+        border-radius:20px;
         margin:10px 13px 10px 0;
     }
     .moduleContent .contentMain :nth-child(4n+0) {

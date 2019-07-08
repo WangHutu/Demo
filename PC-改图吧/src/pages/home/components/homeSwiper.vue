@@ -52,7 +52,7 @@
   .homeSwiper{
     height:512px;
     width:1500px;
-    margin:0 auto;
+    margin:0 auto 330px auto;
   }
   .homeSwiper .headerSearch {
     width:1500px;
