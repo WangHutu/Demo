@@ -1,5 +1,5 @@
 <template>
-    <div class="moduleHeader" :class="typec">
+    <div class="moduleHeader" :class="bgcolor">
         <div class="moduleHeader_top">
             <h2>
                 <a href="javascript::">{{title}}</a>
@@ -21,7 +21,7 @@ export default {
             
         }
     },
-    props:['typec','title']
+    props:['bgcolor','title']
 }
 </script>
 

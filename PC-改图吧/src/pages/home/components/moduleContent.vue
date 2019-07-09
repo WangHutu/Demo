@@ -1,5 +1,5 @@
 <template>
-    <div class="moduleContent" :class="typec">
+    <div class="moduleContent" :class="bgcolor">
         <div class="contentMain">
             <!-- <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="6"> -->
                 <div class="pic" v-for="item in theme" :key="item.id">
@@ -23,7 +23,7 @@ export default {
         return {
         }
     },
-    props:['typec','theme']
+    props:['bgcolor','theme']
 }
 </script>
 

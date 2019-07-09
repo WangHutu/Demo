@@ -1,7 +1,7 @@
 <template>
   <div>
-    <module-header :typec="type" :title="title"></module-header>
-    <module-content :typec="type" :theme="theme"></module-content>
+    <module-header :bgcolor="bgcolor" :title="title"></module-header>
+    <module-content :bgcolor="bgcolor" :theme="theme"></module-content>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
     moduleHeader,
     moduleContent
   },
-  props:['type','title','theme']
+  props:['bgcolor','title','theme']
 };
 </script>
 

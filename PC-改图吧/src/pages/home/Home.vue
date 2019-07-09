@@ -3,8 +3,8 @@
     <home-headerbar></home-headerbar>
     <home-swiper></home-swiper>
     <home-header></home-header>
-    <module type="gray" :title="title[0]" :theme="theme.theme1"></module>
-    <module type="white" :title="title[1]" :theme="theme.theme2"></module>
+    <module bgcolor="gray" :title="title[0]" :theme="theme.theme1"></module>
+    <module bgcolor="white" :title="title[1]" :theme="theme.theme2"></module>
     <bottombar></bottombar>
   </div>
 </template>
