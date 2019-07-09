@@ -4,7 +4,7 @@
       <ul class="homeHeaderbar-left">
         <li>
           <a href>
-            <img class="logo_black" src="../../../assets/loge_black.png" alt>
+            <img class="logo_black" src="../../../assets/logo_black.png" alt>
           </a>
         </li>
       </ul>
@@ -31,7 +31,7 @@ export default {
 }
 .homeHeaderbar {
   width: 1500px;
-  height: 50px;
+  height: 60px;
   margin: 0 auto;
   background-color: #fbfbfc;
 }
@@ -39,18 +39,20 @@ export default {
 .homeHeaderbar-left {
   float: left;
   margin-left: 100px;
-  height: 50px;
+  height: 60px;
+  line-height: 60px;
 }
 .homeHeaderbar-left .logo_black {
   display: block;
   height: 50px;
   width: 130px;
+  margin-top:5px;
 }
 .homeHeaderbar-right {
-  line-height: 40px;
+  line-height: 60px;
   float: right;
   margin-right: 100px;
-  height: 50px;
+  height: 60px;
 }
 </style>
 
