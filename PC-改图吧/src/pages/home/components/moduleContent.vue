@@ -35,25 +35,26 @@ export default {
     .moduleContent .contentMain {
         width:1200px;
         flex-wrap:wrap;
+        display: flex;
+        justify-content: space-between;
     }
     .moduleContent .contentMain .pic {
         display: inline-block;
-        width:290.1px;
+        width:280px;
         text-align:center;
         background-color:#e9e9e9;
         border-radius:20px;
-        margin:10px 13px 10px 0;
-    }
-    .moduleContent .contentMain :nth-child(4n+0) {
-        margin:10px 0;
+        margin:10px;
     }
     .moduleContent .contentMain .pic .img {
         width:85%;
         margin:20px 0;
     }
     .moduleContent .contentMain .pic p {
-        line-height:10px;
+        line-height:5px;
         height: 30px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .moduleBottom {
         width:100%;
