@@ -1,6 +1,6 @@
 <template>
   <div class="homeHeaderbar">
-    <div>
+    <div class="wrapper">
       <ul class="homeHeaderbar-left">
         <li>
           <a href>
@@ -30,29 +30,33 @@ export default {
   text-decoration: none;
 }
 .homeHeaderbar {
-  width: 1500px;
-  height: 60px;
-  margin: 0 auto;
+  width: 100%;
+  height: 70px;
   background-color: #fbfbfc;
+  padding:5px 0;
+}
+.homeHeaderbar .wrapper {
+  width:1500px;
+  margin:10px auto;
+  height:50px;
 }
 
 .homeHeaderbar-left {
   float: left;
-  margin-left: 100px;
-  height: 60px;
-  line-height: 60px;
+  margin-left: 0px;
+  height: 50px;
+  line-height: 50px;
 }
 .homeHeaderbar-left .logo_black {
   display: block;
   height: 50px;
   width: 130px;
-  margin-top:5px;
 }
 .homeHeaderbar-right {
-  line-height: 60px;
+  line-height: 50px;
   float: right;
-  margin-right: 100px;
-  height: 60px;
+  margin-right: 0px;
+  height: 50px;
 }
 </style>
 

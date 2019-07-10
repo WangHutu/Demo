@@ -3,38 +3,38 @@
         <div class="bottomOne">
             <div class="wrap">
                 <ul>
-                    <el-link href="javscript::" target="_blank">默认链接</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">友情链接</el-link><span> |</span>
-                    <el-link href="javscript::" type="danger" target="_blank">热门搜索</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">新图上传</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">精品专题</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">设计师排行</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">默认链接</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">友情链接</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" type="danger" target="_blank">热门搜索</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">新图上传</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">精品专题</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">设计师排行</el-link>
                 </ul>
                 <ul>
-                    <el-link href="javscript::" target="_blank">汽车</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">房地产</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">餐饮</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">美容美发</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">健身</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">微商</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">汽车</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">房地产</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">餐饮</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">美容美发</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">健身</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">微商</el-link>
                 </ul>
                 <ul>
-                    <el-link href="javscript::" target="_blank">展板展架</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">banner</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">易拉宝</el-link><span> |</span><span> |</span>
-                    <el-link href="javscript::" target="_blank">邀请函</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">封面</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">主面</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">首页</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">简历</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">展板展架</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">banner</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">易拉宝</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">邀请函</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">封面</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">主面</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">首页</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">简历</el-link>
                 </ul>
                 <ul>
-                    <el-link href="javscript::" target="_blank">展架</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">优惠券</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">餐饮</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">边框</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">单页</el-link><span> |</span>
-                    <el-link href="javscript::" target="_blank">代金券</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">展架</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">优惠券</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">餐饮</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">边框</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">单页</el-link><span> |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">代金券</el-link>
                 </ul>
             </div>
         </div>
@@ -67,16 +67,26 @@
             </div>
         </div>
         <div class="bottomThere">
-            <ul class="bottomThere-left">
-                <li>
-                    <a href="">
-                        <img class="logo_black" src="@/assets/logo_black.png" alt="">
-                    </a>
-                </li>
-            </ul>
-            <ul class="bottomThere-right">
-                <li></li>
-            </ul>
+            <div class="container">
+                <ul class="bottomThere-left">
+                    <li>
+                        <a :underline="false" href="">
+                            <img class="logo_black" src="@/assets/logo_black.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="bottomThere-right">
+                    <el-link :underline="false" href="javscript::" target="_blank">今日新图</el-link><span>  |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">热门专题</el-link><span>  |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">设计图片</el-link><span>  |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">售后服务</el-link><span>  |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">关于我们</el-link><span>  |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">联系我们</el-link><span>  |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">加入我们</el-link><span>  |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">帮助中心</el-link><span>  |</span>
+                    <el-link :underline="false" href="javscript::" target="_blank">在线客服</el-link><span>  |</span>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -122,19 +132,36 @@ export default {
         margin:auto 0;
     }
     .bottombar .bottomThere {
-        height:60px;
+        height:70px;
         width:100%;
-        background-color:#f5f5f5
+        background-color:#f5f5f5;
+        padding: 5px 0;
+        list-style: none;
+        text-decoration:none;
+    }
+    .bottombar .bottomThere .container {
+        height:70px;
+        width:1500px;
+        margin:0 auto;
     }
     .bottombar .bottomThere .bottomThere-left {
-        margin-left:100px;
         float:left;
-        
+        margin: 10px 0;
+        height:50px;
     }
     .bottombar .bottomThere .bottomThere-left .logo_black{
         height:50px;
         width:130px;
     }
+    .bottombar .bottomThere .bottomThere-right {
+        float: right;
+        width:800px;
+        height:50px;
+        margin:10px 270px 10px 0;
+        line-height: 50px;
+        font-size:25px;
+    }
+    
 </style>
 
 
