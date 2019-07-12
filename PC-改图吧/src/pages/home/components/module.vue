@@ -6,20 +6,19 @@
 </template>
 
 <script>
-import moduleHeader from "./moduleHeader";
-import moduleContent from "./moduleContent";
+import moduleHeader from './moduleHeader'
+import moduleContent from './moduleContent'
 
 export default {
-  name: "module",
+  name: 'module',
   components: {
     moduleHeader,
     moduleContent
   },
-  props:['bgcolor','title','theme']
-};
+  props: ['bgcolor', 'title', 'theme']
+}
 </script>
 
 <style>
 
 </style>
-

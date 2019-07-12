@@ -4,7 +4,7 @@
       <ul class="homeHeaderbar-left">
         <li>
           <a href>
-            <img class="logo_black" src="../../../assets/logo_black.png" alt>
+            <img class="logo_black" src="../../../assets/logo_black.png" alt />
           </a>
         </li>
       </ul>
@@ -19,8 +19,8 @@
 </template>
 <script>
 export default {
-  name: "homeHeaderbar"
-};
+  name: 'homeHeaderbar'
+}
 </script>
 <style>
 * {
@@ -33,12 +33,12 @@ export default {
   width: 100%;
   height: 70px;
   background-color: #fbfbfc;
-  padding:5px 0;
+  padding: 5px 0;
 }
 .homeHeaderbar .wrapper {
-  width:1500px;
-  margin:10px auto;
-  height:50px;
+  width: 1500px;
+  margin: 10px auto;
+  height: 50px;
 }
 
 .homeHeaderbar-left {
@@ -59,5 +59,3 @@ export default {
   height: 50px;
 }
 </style>
-
-
