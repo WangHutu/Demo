@@ -56,7 +56,7 @@ export default {
 .homeSwiper {
   height: 512px;
   width: 1500px;
-  margin: 0 auto 325px auto;
+  margin: 0 auto 300px auto;
 }
 .homeSwiper .headerSearch {
   width: 1500px;

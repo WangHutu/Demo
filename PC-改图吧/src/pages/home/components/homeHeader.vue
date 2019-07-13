@@ -60,7 +60,7 @@ export default {
   text-decoration: none;
 }
 html body {
-  background-color: #e9f0f0;
+  background-color: #eee;
 }
 .homeHeader {
   width: 1200px;

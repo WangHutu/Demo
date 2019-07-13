@@ -119,6 +119,13 @@
         </ul>
       </div>
     </div>
+    <div class="bottomFour">
+      <div class="remarks">
+        <div>为了防范电信网络诈骗，如接到962110来电，请立即接听</div>
+        <div>沪ICP备16053114号-2 ICP证:沪B2-20180032 沪公网安备31011502400137号 Copyright©2016-2019 包图网ibaotu.com 版权所有</div>
+        <div> 上海工商 广播电视节目制作经营许可证（沪）字第03172号网络文化经营许可证 沪网文{2019}2346-159号《包图网络服务使用协议》《包图隐私政策》</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -189,5 +196,16 @@ export default {
   margin: 10px 270px 10px 0;
   line-height: 50px;
   font-size: 25px;
+}
+.bottombar .bottomFour {
+  width:100%;
+  height:150px;
+}
+.bottombar .bottomFour .remarks {
+  width:1500px;
+  height:100px;
+  margin:25px auto;
+  text-align: center;
+  line-height: 30px;
 }
 </style>

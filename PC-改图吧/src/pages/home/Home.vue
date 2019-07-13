@@ -3,6 +3,7 @@
     <home-headerbar></home-headerbar>
     <home-swiper></home-swiper>
     <home-header></home-header>
+    <flexbar></flexbar>
     <module bgcolor="gray" :title="title[0]" :theme="theme.theme1"></module>
     <module bgcolor="white" :title="title[1]" :theme="theme.theme2"></module>
     <bottombar></bottombar>
@@ -15,6 +16,7 @@ import homeSwiper from './components/homeSwiper'
 import homeHeader from './components/homeHeader'
 import module from './components/module'
 import bottombar from './components/bottombar'
+import flexbar from './components/flexbar'
 
 export default {
   name: 'Home',
@@ -65,7 +67,8 @@ export default {
     homeSwiper,
     homeHeader,
     module,
-    bottombar
+    bottombar,
+    flexbar
   }
 }
 </script>
