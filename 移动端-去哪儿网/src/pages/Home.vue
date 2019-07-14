@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import topBar from '@/pages/components/topBar'
-import swiper from '@/pages/components/swiper'
+import topBar from './components/topBar'
+import swiper from './components/headerswiper'
 
 export default {
   name: 'Home',

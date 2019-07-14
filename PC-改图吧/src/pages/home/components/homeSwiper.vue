@@ -3,14 +3,8 @@
     <div class="headerSearch">
       <div class="imgs">
         <swiper :options="swiperOption">
-          <swiper-slide>
-            <img class="swiperImg" src="../../../assets/header_bj.jpg" alt />
-          </swiper-slide>
-          <swiper-slide>
-            <img class="swiperImg" src="../../../assets/swiper2.jpg" alt />
-          </swiper-slide>
-          <swiper-slide>
-            <img class="swiperImg" src="../../../assets/swiper3.jpg" alt />
+          <swiper-slide v-for="item in imgs" :key="item.id">
+            <img class="swiperImg" :src="item.imgSrc" />
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
