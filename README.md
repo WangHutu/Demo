@@ -7,8 +7,8 @@ PC-改图吧
 - Element-UI框架；Vue-awesome-swiper轮播图
 
 - 打开终端：
-  执行命令` npm install ` 下载相应的依赖
-  执行命令` npm run dev ` 启动服务
+  - 执行命令` npm install ` 下载相应的依赖
+  - 执行命令` npm run dev ` 启动服务
   
 移动端-去哪儿网
 - 是基于vue，运用：stylus的css预处理框架，vue组件化思想
