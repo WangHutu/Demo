@@ -1,4 +1,4 @@
-# Demo
+# 项目
 weibo-php
 - 运用：jquery框架，wamp服务器，以及PHP后台接口，cookie缓存
   
