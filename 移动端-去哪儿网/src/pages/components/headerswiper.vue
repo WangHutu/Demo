@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'headerswiper',
+  name: 'headerSwiper',
   data () {
     return {
       swiperOption: {

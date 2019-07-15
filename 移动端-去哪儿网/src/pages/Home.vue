@@ -1,19 +1,22 @@
 <template>
   <div>
     <top-bar></top-bar>
-    <swiper></swiper>
+    <header-swiper></header-swiper>
+    <icons></icons>
   </div>
 </template>
 
 <script>
 import topBar from './components/topBar'
-import swiper from './components/headerswiper'
+import headerSwiper from './components/headerSwiper'
+import icons from './components/icons'
 
 export default {
   name: 'Home',
   components: {
     topBar,
-    swiper
+    headerSwiper,
+    icons
   }
 }
 </script>
