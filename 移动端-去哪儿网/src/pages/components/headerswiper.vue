@@ -17,8 +17,8 @@ export default {
       swiperOption: {
         pagination: '.swiper-pagination',
         loop: true,
-        autoplay: 3000,
-        speed: 2500
+        autoplay: true,
+        speed: 1000
       },
       swiperimgs: [
         {id: 1, imgSrc: require('assets/swiper1.jpg')},
@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  .headerswiper>>> .swiper-pagination-bullet-active
   .headerswiper
     // 这样定宽高比例，在加载速度慢的时候，不会出现屏幕图片抖动
     overflow: hidden
