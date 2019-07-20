@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <home></home>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Home from './pages/home/Home'
+import Modules from './pages/modules/Modules'
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    Modules
   }
 }
 
 </script>
 
 <style>
-#app {
 
-}
 </style>
