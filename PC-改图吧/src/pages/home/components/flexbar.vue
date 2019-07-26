@@ -41,10 +41,17 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('scroll', this.handleScroll, true)
+    console.log('flex组件加载')
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    console.log('flex组件销毁')
   },
   methods: {
-    handleScroll (e) {
+    handleScroll () {
       let scrollY = window.scrollY
       if (scrollY >= 800) {
         this.$refs.flex.style = 'display:block;'

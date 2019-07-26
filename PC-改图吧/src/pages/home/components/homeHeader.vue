@@ -2,7 +2,7 @@
   <div class="homeHeader">
     <div class="navTop">
       <el-button-group>
-        <el-button class="item itemlift" >首页</el-button>
+        <el-button class="item itemlift" @click="modulesHome">首页</el-button>
         <el-button class="item">地产海报</el-button>
         <el-button class="item">党建活动</el-button>
         <el-button class="item">电商淘宝</el-button>
@@ -50,9 +50,9 @@ export default {
     }
   },
   methods: {
-    // fmodulesSY () {
-    //   this.$router.push({path: '../../modules/modules', name: 'Modules'})
-    // }
+    modulesHome () {
+      this.$router.push({name: 'Modules'})
+    }
   }
 }
 </script>

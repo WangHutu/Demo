@@ -9,10 +9,14 @@
       <!-- </el-col> -->
     </div>
     <div class="moduleBottom">
-      <a href="javascript::" class="bottom">
+      <router-link class="bottom" :to="{ name:'Modules' }">
         点击查看更多...
         <span class="el-icon-arrow-right"></span>
-      </a>
+      </router-link>
+      <!-- <a href="javascript::" class="bottom">
+        点击查看更多...
+        <span class="el-icon-arrow-right"></span>
+      </a> -->
     </div>
   </div>
 </template>
