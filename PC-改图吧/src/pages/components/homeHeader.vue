@@ -76,7 +76,6 @@ html body {
   z-index: 10;
 }
 .homeHeader .navTop {
-  display: flex;
   width: 1200px;
   height: 45px;
   border-radius: 30px 30px 0 0;

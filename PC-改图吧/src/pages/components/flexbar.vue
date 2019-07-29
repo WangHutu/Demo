@@ -2,8 +2,10 @@
   <div class="flexbar" ref="flex">
     <div class="flexbox">
       <ul class="flexlogo">
-        <el-link :underline="false" href="javscript::" target="_blank">
-          <img class="logo" src="@/assets/logo_black.png" />
+        <el-link class="bar" :underline="false">
+          <router-link :to=" {name:'Home'} ">
+            <img class="logo" src="@/assets/logo_black.png" />
+          </router-link>
         </el-link>
         <el-link class="bar" :underline="false" href="javscript::" target="_blank">首页</el-link>
         <el-link class="bar" :underline="false" href="javscript::" target="_blank">分类</el-link>

@@ -3,7 +3,7 @@
     <div class="wrapper">
       <ul class="homeHeaderbar-left">
         <li>
-          <a href>
+          <a href="javascript::">
             <img class="logo_black" src="../../assets/logo_black.png" alt />
           </a>
         </li>
