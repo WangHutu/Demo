@@ -22,25 +22,5 @@ export default new Router({
       name: 'Modules',
       component: Modules
     }
-    // {
-    //   path: '/',
-    //   redirect: '/app'
-    // },
-    // {
-    //   path: '/app',
-    //   name: 'App',
-    //   component: App,
-    //   redirect: '/app/home',
-    //   children: [{
-    //     path: 'home',
-    //     name: 'Home',
-    //     component: Home
-    //   },
-    //   {
-    //     path: 'modules',
-    //     name: 'Modules',
-    //     component: Modules
-    //   }]
-    // }
   ]
 })

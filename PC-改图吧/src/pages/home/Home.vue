@@ -11,12 +11,12 @@
 </template>
 
 <script>
-import homeHeaderbar from './components/homeHeaderbar'
-import homeSwiper from './components/homeSwiper'
-import homeHeader from './components/homeHeader'
-import module from './components/module'
-import bottombar from './components/bottombar'
-import flexbar from './components/flexbar'
+import homeHeaderbar from '../components/homeHeaderbar'
+import homeSwiper from '../components/homeSwiper'
+import homeHeader from '../components/homeHeader'
+import module from '../components/module'
+import bottombar from '../components/bottombar'
+import flexbar from '../components/flexbar'
 
 export default {
   name: 'Home',

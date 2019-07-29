@@ -24,9 +24,9 @@ export default {
     return {
       input: '',
       imgs: [
-        { id: 1, imgSrc: require('../../../assets/header_bj.jpg') },
-        { id: 2, imgSrc: require('../../../assets/swiper2.jpg') },
-        { id: 3, imgSrc: require('../../../assets/swiper3.jpg') }
+        { id: 1, imgSrc: require('../../assets/header_bj.jpg') },
+        { id: 2, imgSrc: require('../../assets/swiper2.jpg') },
+        { id: 3, imgSrc: require('../../assets/swiper3.jpg') }
       ],
       swiperOption: {
         pagination: '.swiper-pagination',
@@ -93,7 +93,7 @@ export default {
   position: absolute;
   right: 0;
   height: 50px;
-  background: url("../../../assets/search.png") no-repeat;
+  background: url("../../assets/search.png") no-repeat;
   background-size: 100% 100%;
   width: 100px;
   border: none;

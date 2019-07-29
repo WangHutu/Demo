@@ -15,7 +15,7 @@
     </div>
     <div class="home">
       <div class="homBunner">
-        <img src="../../../assets/home_top.png" />
+        <img src="../../assets/home_top.png" />
       </div>
       <div class="homeCard">
         <el-carousel :interval="4000" type="card" height="250px">
@@ -40,12 +40,12 @@ export default {
   data () {
     return {
       homeCar: [
-        { id: 1, carSrc: require('../../../assets/img1.jpg') },
-        { id: 2, carSrc: require('../../../assets/img2.jpg') },
-        { id: 3, carSrc: require('../../../assets/img3.jpg') },
-        { id: 4, carSrc: require('../../../assets/img4.jpg') },
-        { id: 5, carSrc: require('../../../assets/img5.jpg') },
-        { id: 6, carSrc: require('../../../assets/img6.jpg') }
+        { id: 1, carSrc: require('../../assets/img1.jpg') },
+        { id: 2, carSrc: require('../../assets/img2.jpg') },
+        { id: 3, carSrc: require('../../assets/img3.jpg') },
+        { id: 4, carSrc: require('../../assets/img4.jpg') },
+        { id: 5, carSrc: require('../../assets/img5.jpg') },
+        { id: 6, carSrc: require('../../assets/img6.jpg') }
       ]
     }
   },
@@ -100,7 +100,7 @@ html body {
 .homeHeader .home .homeCard {
   border-radius: 15px;
   padding: auto 20px;
-  background: url("../../../assets/bunner_bj.jpg");
+  background: url("../../assets/bunner_bj.jpg");
   background-size: 100% 100%;
 }
 .el-carousel__mask {

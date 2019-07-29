@@ -4,7 +4,7 @@
       <ul class="homeHeaderbar-left">
         <li>
           <a href>
-            <img class="logo_black" src="../../../assets/logo_black.png" alt />
+            <img class="logo_black" src="../../assets/logo_black.png" alt />
           </a>
         </li>
       </ul>

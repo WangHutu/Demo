@@ -35,7 +35,7 @@ export default {
       admin: {
         id: 1,
         name: '随风',
-        portrait: require('../../../assets/portrait.png'),
+        portrait: require('../../assets/portrait.png'),
         title: '设计师'
       }
     }
@@ -146,7 +146,7 @@ export default {
   width: 80px;
   line-height: 70px;
   margin: 14px 0 14px;
-  background: url("../../../assets/search_flex.png");
+  background: url("../../assets/search_flex.png");
   background-size: 100% 100%;
   float: left;
   box-sizing: border-box;
