@@ -2,6 +2,7 @@
 > A Vue.js project
 
 ## 介绍
+- 组件化思想，结合vue-awesome-swiper插件
 - 是基于vue，运用：stylus的css预处理框架，vue组件化思想
 - 引入reset.css文件，重置样式；
 - 引入fastclick库，解决某些机型的点击事件的延迟问题
