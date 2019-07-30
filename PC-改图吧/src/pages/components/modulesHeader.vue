@@ -2,7 +2,7 @@
   <div class="modulesheader">
     <div class="wrapper">
       <div class="navTop">
-        <el-button-group class="items">
+        <el-button-group class="items" @click.native="tabSY">
           <el-button class="item itemlift">首页</el-button>
           <el-button class="item">地产海报</el-button>
           <el-button class="item">党建活动</el-button>
@@ -14,14 +14,158 @@
           <el-button class="item itemright">更多....</el-button>
         </el-button-group>
       </div>
-      <div class="swiper"></div>
+      <div class="bunner">
+        <img :src="modulesdata.bunner" alt="">
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'modulesHeader'
+  name: 'modulesHeader',
+  methods: {
+    tabSY () {
+      console.log(this)
+    }
+  },
+  data () {
+    return {
+      modulesdata: {
+        bunner: 'static/bunner_dichan.png'
+      },
+      message: {
+        '首页': {
+          bunner: 'static/bunner_dichan.png',
+          theme: [
+            { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 4, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 5, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 6, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 7, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 8, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 9, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
+          ]},
+        '地产海报': {
+          bunner: 'static/bunner_dichan.png',
+          theme: [
+            { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 4, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 5, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 6, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 7, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 8, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 9, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
+          ]},
+        '党建活动': {
+          bunner: 'static/bunner_dichan.png',
+          theme: [
+            { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 4, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 5, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 6, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 7, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 8, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 9, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
+          ]},
+        '电商淘宝': {
+          bunner: 'static/bunner_dichan.png',
+          theme: [
+            { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 4, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 5, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 6, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 7, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 8, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 9, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
+          ]},
+        '活动海报': {
+          bunner: 'static/bunner_dichan.png',
+          theme: [
+            { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 4, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 5, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 6, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 7, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 8, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 9, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
+          ]},
+        '办公文档': {
+          bunner: 'static/bunner_dichan.png',
+          theme1: [
+            { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 4, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 5, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 6, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 7, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 8, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 9, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
+          ]},
+        '插图配图': {
+          bunner: 'static/bunner_dichan.png',
+          theme: [
+            { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 4, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 5, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 6, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 7, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 8, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 9, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
+          ]},
+        '广告设计': {
+          bunner: 'static/bunner_dichan.png',
+          theme: [
+            { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 4, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 5, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 6, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 7, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 8, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 9, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
+            { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
+          ]}
+      }
+    }
+  }
 }
 </script>
 
@@ -32,7 +176,7 @@ export default {
 }
 .modulesheader .wrapper .navTop {
   width: 1200px;
-  height: 45px;
+  height: 40px;
 }
 .modulesheader .wrapper .navTop .item {
   width: 134px;
@@ -42,5 +186,9 @@ export default {
 }
 .modulesheader .wrapper .navTop .itemright {
   border-radius: 0 10px 0 0;
+}
+.modulesheader .wrapper .bunner img{
+  width: 1197px;
+  height: 200px;
 }
 </style>

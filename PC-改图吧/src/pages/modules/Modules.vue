@@ -2,18 +2,27 @@
 <div>
   <modules-bar></modules-bar>
   <modules-header></modules-header>
+  <flexbar></flexbar>
+  <modules-main></modules-main>
+  <bottombar></bottombar>
 </div>
 </template>
 
 <script>
 import modulesBar from '../components/modulesBar'
 import modulesHeader from '../components/modulesHeader'
+import modulesMain from '../components/modulesMain'
+import flexbar from '../components/flexbar'
+import bottombar from '../components/bottombar'
 
 export default {
   name: 'Modules',
   components: {
     modulesBar,
-    modulesHeader
+    modulesHeader,
+    flexbar,
+    modulesMain,
+    bottombar
   }
 }
 </script>

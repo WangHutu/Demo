@@ -1,5 +1,5 @@
 <template>
-  <div class="moduleContent" :class="bgcolor">
+  <div class="mainContent" :class="bgcolor">
     <div class="contentMain">
       <!-- <el-col :xs="12" :sm="8" :md="6" :lg="6" :xl="6"> -->
       <div class="pic" v-for="item in theme" :key="item.id">
@@ -8,7 +8,7 @@
       </div>
       <!-- </el-col> -->
     </div>
-    <div class="moduleBottom">
+    <div class="contentBotton">
       <router-link class="bottom" :to="{ name:'Modules' }">
         点击查看更多...
         <span class="el-icon-arrow-right"></span>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'moduleContent',
+  name: 'mainContent',
   data () {
     return {}
   },
@@ -32,17 +32,17 @@ export default {
 </script>
 
 <style>
-.moduleContent {
+.mainContent {
   width: 1200px;
   margin: -0 auto;
 }
-.moduleContent .contentMain {
+.mainContent .contentMain {
   width: 1200px;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
-.moduleContent .contentMain .pic {
+.mainContent .contentMain .pic {
   display: inline-block;
   width: 280px;
   text-align: center;
@@ -50,25 +50,25 @@ export default {
   border-radius: 20px;
   margin: 10px;
 }
-.moduleContent .contentMain .pic .img {
+.mainContent .contentMain .pic .img {
   width: 85%;
   margin: 20px 0;
 }
-.moduleContent .contentMain .pic p {
+.mainContent .contentMain .pic p {
   line-height: 5px;
   height: 30px;
   font-size: 20px;
   font-weight: bold;
 }
-.moduleBottom {
+.contentBotton {
   width: 100%;
   line-height: 70px;
   text-align: center;
 }
-.moduleBottom .bottom {
+.contentBotton .bottom {
   color: #333;
 }
-.moduleBottom .bottom:hover {
+.contentBotton .bottom:hover {
   color: #f98722;
   margin-right: 4px;
 }

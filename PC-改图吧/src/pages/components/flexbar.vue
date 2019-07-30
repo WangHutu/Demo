@@ -55,7 +55,7 @@ export default {
   methods: {
     handleScroll () {
       let scrollY = window.scrollY
-      if (scrollY >= 800) {
+      if (scrollY >= 600) {
         this.$refs.flex.style = 'display:block;'
       } else {
         this.$refs.flex.style = 'display:none;'

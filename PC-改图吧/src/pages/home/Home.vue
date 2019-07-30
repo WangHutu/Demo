@@ -4,8 +4,8 @@
     <home-swiper></home-swiper>
     <home-header></home-header>
     <flexbar></flexbar>
-    <module bgcolor="gray" :title="title[0]" :theme="theme.theme1"></module>
-    <module bgcolor="white" :title="title[1]" :theme="theme.theme2"></module>
+    <home-main bgcolor="gray" :title="title[0]" :theme="theme.theme1"></home-main>
+    <home-main bgcolor="white" :title="title[1]" :theme="theme.theme2"></home-main>
     <bottombar></bottombar>
   </div>
 </template>
@@ -14,7 +14,7 @@
 import homeHeaderbar from '../components/homeHeaderbar'
 import homeSwiper from '../components/homeSwiper'
 import homeHeader from '../components/homeHeader'
-import module from '../components/module'
+import homeMain from '../components/homeMain'
 import bottombar from '../components/bottombar'
 import flexbar from '../components/flexbar'
 
@@ -66,7 +66,7 @@ export default {
     homeHeaderbar,
     homeSwiper,
     homeHeader,
-    module,
+    homeMain,
     bottombar,
     flexbar
   }

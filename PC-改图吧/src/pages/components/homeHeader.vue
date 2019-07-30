@@ -77,7 +77,7 @@ html body {
 }
 .homeHeader .navTop {
   width: 1200px;
-  height: 45px;
+  height: 43px;
   border-radius: 30px 30px 0 0;
 }
 .homeHeader .navTop .item {
@@ -90,7 +90,7 @@ html body {
   border-radius: 0 10px 0 0;
 }
 .homeHeader .home {
-  width: 1200px;
+  width: 1199px;
 }
 .homeHeader .home .homBunner {
   text-align: center;

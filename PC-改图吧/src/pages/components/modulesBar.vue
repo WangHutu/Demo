@@ -57,7 +57,7 @@ export default {
   height: 40px;
 }
 .modulesbar .wrapper .box .search .searchinput:focus {
-  border: 1px solid #2d78f4;
+  border: 2px solid #2d78f4;
   outline: #2d78f4;
 }
 .modulesbar .wrapper .box .search .searchbtn {
@@ -68,7 +68,7 @@ export default {
   border: none;
 }
 .modulesbar .wrapper .box .search .searchbtn:focus {
-  border: 1px solid #2d78f4;
+  border: 2px solid #2d78f4;
   outline: #2d78f4;
 }
 .modulesbar .wrapper .box .search .searchbtn img {
