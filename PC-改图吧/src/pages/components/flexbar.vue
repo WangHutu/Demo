@@ -4,13 +4,13 @@
       <ul class="flexlogo">
         <el-link class="bar" :underline="false">
           <router-link :to=" {name:'Home'} ">
-            <img class="logo" src="@/assets/logo_black.png" />
+            <img class="logo" src="@/assets/logo_black.png" @click="homepage">
           </router-link>
         </el-link>
-        <el-link class="bar" :underline="false" href="javscript::" target="_blank">首页</el-link>
-        <el-link class="bar" :underline="false" href="javscript::" target="_blank">分类</el-link>
-        <el-link class="bar" :underline="false" href="javscript::" target="_blank">VIP</el-link>
-        <el-link class="bar" :underline="false" href="javscript::" target="_blank">设计师排行</el-link>
+        <el-link class="bar" :underline="false" href="javscript::">首页</el-link>
+        <el-link class="bar" :underline="false" href="javscript::">分类</el-link>
+        <el-link class="bar" :underline="false" href="javscript::">VIP</el-link>
+        <el-link class="bar" :underline="false" href="javscript::">设计师排行</el-link>
       </ul>
       <ul class="flexsearch">
         <li class="messge">
@@ -60,6 +60,9 @@ export default {
       } else {
         this.$refs.flex.style = 'display:none;'
       }
+    },
+    homepage () {
+      this.$router.push({name: 'Home'})
     }
   }
 }

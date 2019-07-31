@@ -14,7 +14,7 @@
     </div>
     <div class="maincontent">
       <div class="contentmain">
-        <div class="pic" v-for="item in theme1" :key="item.id">
+        <div class="pic" v-for="item in theme" :key="item.id">
           <img class="img" :src="item.imgSrc" alt />
           <p>{{item.name}}</p>
         </div>
@@ -24,12 +24,19 @@
 </template>
 
 <script>
+import bus from '../../assets/Bus'
+
 export default {
   name: 'modulesMain',
-  props: ['theme'],
+  mounted () {
+    bus.$on('themes', msg => {
+      console.log(msg)
+      this.theme = msg
+    })
+  },
   data () {
     return {
-      theme1: [
+      theme: [
         { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
         { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
         { id: 3, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
@@ -42,20 +49,6 @@ export default {
         { id: 10, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
         { id: 11, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
         { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
-      ],
-      theme2: [
-        { id: 1, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 2, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 3, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 4, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 5, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 6, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 7, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 8, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 9, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 10, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 11, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') },
-        { id: 12, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') }
       ]
     }
   }

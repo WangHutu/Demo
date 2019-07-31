@@ -4,7 +4,7 @@
       <ul class="box">
         <li>
           <div class="logo">
-            <img src="@/assets/logo_black.png" alt="">
+            <img src="@/assets/logo_black.png" alt="" @click="homepage">
           </div>
         </li>
         <li>
@@ -22,7 +22,12 @@
 
 <script>
 export default {
-  name: 'modulesBar'
+  name: 'modulesBar',
+  methods: {
+    homepage () {
+      this.$router.push({name: 'Home'})
+    }
+  }
 }
 </script>
 
@@ -46,6 +51,7 @@ export default {
 .modulesbar .wrapper .box .logo img {
   height: 100%;
   width: 100%;
+  cursor: pointer;
 }
 .modulesbar .wrapper .box .search {
   height: 46px;
