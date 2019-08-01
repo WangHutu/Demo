@@ -3,9 +3,9 @@
     <div class="flexbox">
       <ul class="flexlogo">
         <el-link class="bar" :underline="false">
-          <router-link :to=" {name:'Home'} ">
+          <a href>
             <img class="logo" src="@/assets/logo_black.png" @click="homepage">
-          </router-link>
+          </a>
         </el-link>
         <el-link class="bar" :underline="false" href="javscript::">首页</el-link>
         <el-link class="bar" :underline="false" href="javscript::">分类</el-link>

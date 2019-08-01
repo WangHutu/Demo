@@ -93,28 +93,28 @@
         <ul class="bottomThere-left">
           <li>
             <a :underline="false" href>
-              <img class="logo_black" src="@/assets/logo_black.png" alt />
+              <img class="logo_black" src="@/assets/logo_black.png">
             </a>
           </li>
         </ul>
         <ul class="bottomThere-right">
-          <el-link :underline="false" href="javscript::" target="_blank">今日新图</el-link>
+          <el-link :underline="false" href="javscript::">今日新图</el-link>
           <span>|</span>
-          <el-link :underline="false" href="javscript::" target="_blank">热门专题</el-link>
+          <el-link :underline="false" href="javscript::">热门专题</el-link>
           <span>|</span>
-          <el-link :underline="false" href="javscript::" target="_blank">设计图片</el-link>
+          <el-link :underline="false" href="javscript::">设计图片</el-link>
           <span>|</span>
-          <el-link :underline="false" href="javscript::" target="_blank">售后服务</el-link>
+          <el-link :underline="false" href="javscript::">售后服务</el-link>
           <span>|</span>
-          <el-link :underline="false" href="javscript::" target="_blank">关于我们</el-link>
+          <el-link :underline="false" href="javscript::">关于我们</el-link>
           <span>|</span>
-          <el-link :underline="false" href="javscript::" target="_blank">联系我们</el-link>
+          <el-link :underline="false" href="javscript::">联系我们</el-link>
           <span>|</span>
-          <el-link :underline="false" href="javscript::" target="_blank">加入我们</el-link>
+          <el-link :underline="false" href="javscript::">加入我们</el-link>
           <span>|</span>
-          <el-link :underline="false" href="javscript::" target="_blank">帮助中心</el-link>
+          <el-link :underline="false" href="javscript::">帮助中心</el-link>
           <span>|</span>
-          <el-link :underline="false" href="javscript::" target="_blank">在线客服</el-link>
+          <el-link :underline="false" href="javscript::">在线客服</el-link>
           <span>|</span>
         </ul>
       </div>

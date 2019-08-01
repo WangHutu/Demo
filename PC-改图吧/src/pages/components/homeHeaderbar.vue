@@ -4,7 +4,7 @@
       <ul class="homeHeaderbar-left">
         <li>
           <a href="#">
-            <img class="logo_black" src="../../assets/logo_black.png" alt />
+            <img class="logo_black" src="../../assets/logo_black.png" @click="homepage">
           </a>
         </li>
       </ul>
@@ -19,7 +19,12 @@
 </template>
 <script>
 export default {
-  name: 'homeHeaderbar'
+  name: 'homeHeaderbar',
+  methods: {
+    homepage () {
+      this.$router.push({name: 'Home'})
+    }
+  }
 }
 </script>
 <style>

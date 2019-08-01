@@ -72,7 +72,7 @@ export default {
             { id: 12, name: '绿野仙踪', imgSrc: require('@/assets/theme2.png') }
           ]},
         '党建活动': {
-          bunner: 'static/bunner_dichan.png',
+          bunner: 'static/bunner_bj.jpg',
           theme: [
             { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
             { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
@@ -104,7 +104,7 @@ export default {
             { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
           ]},
         '活动海报': {
-          bunner: 'static/bunner_dichan.png',
+          bunner: 'static/bunner_bj.jpg',
           theme: [
             { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
             { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
@@ -136,7 +136,7 @@ export default {
             { id: 12, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') }
           ]},
         '插图配图': {
-          bunner: 'static/bunner_dichan.png',
+          bunner: 'static/bunner_bj.jpg',
           theme: [
             { id: 1, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
             { id: 2, name: '夜景摩天轮', imgSrc: require('@/assets/theme.png') },
