@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import axios from 'axios'
 
 // 引入样式
 import 'element-ui/lib/theme-chalk/index.css'
@@ -13,6 +14,7 @@ import 'swiper/dist/css/swiper.css'
 // 引入组件
 import 'element-ui/lib/index'
 
+// Vue.prototype.$axios = 'axios'
 Vue.config.productionTip = false
 
 // 安装element-ui插件

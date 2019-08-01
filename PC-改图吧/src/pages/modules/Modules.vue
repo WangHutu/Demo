@@ -4,6 +4,7 @@
   <modules-header></modules-header>
   <flexbar></flexbar>
   <modules-main></modules-main>
+  <page></page>
   <bottombar></bottombar>
 </div>
 </template>
@@ -14,6 +15,7 @@ import modulesHeader from '../components/modulesHeader'
 import modulesMain from '../components/modulesMain'
 import flexbar from '../components/flexbar'
 import bottombar from '../components/bottombar'
+import page from '../components/page'
 
 export default {
   name: 'Modules',
@@ -22,7 +24,8 @@ export default {
     modulesHeader,
     flexbar,
     modulesMain,
-    bottombar
+    bottombar,
+    page
   }
 }
 </script>
