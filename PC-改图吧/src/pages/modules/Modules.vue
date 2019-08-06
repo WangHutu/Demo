@@ -2,7 +2,7 @@
 <div>
   <modules-bar></modules-bar>
   <modules-header></modules-header>
-  <flexbar></flexbar>
+  <flexbar v-if="flex"></flexbar>
   <modules-main></modules-main>
   <page></page>
   <bottombar></bottombar>
@@ -18,7 +18,28 @@ import bottombar from '../components/bottombar'
 import page from '../components/page'
 
 export default {
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll () {
+      let scrollY = window.scrollY
+      if (scrollY >= 520) {
+        this.flex = true
+      } else {
+        this.flex = false
+      }
+    }
+  },
   name: 'Modules',
+  data () {
+    return {
+      flex: false
+    }
+  },
   components: {
     modulesBar,
     modulesHeader,
@@ -31,11 +52,13 @@ export default {
 </script>
 
 <style>
-html body {
-  background-color: #F4F5F5;
-}
-html body li {
+* {
+  padding: 0;
+  margin: 0;
   list-style: none;
   text-decoration: none;
+}
+html body {
+  background-color: #F4F5F5;
 }
 </style>

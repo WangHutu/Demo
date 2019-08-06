@@ -3,7 +3,7 @@ import Router from 'vue-router'
 // import App from '../App'
 import Home from '../pages/home/Home'
 import Modules from '../pages/modules/Modules'
-import modulesMain from '../pages/components/modulesMain'
+import Downloadpage from '../pages/downloapage/Downloadpage'
 
 Vue.use(Router)
 
@@ -21,12 +21,12 @@ export default new Router({
     {
       path: '/modules',
       name: 'Modules',
-      component: Modules,
-      children: [{
-        path: '/modules/:id',
-        name: 'modulesMain',
-        component: modulesMain
-      }]
+      component: Modules
+    },
+    {
+      path: '/download',
+      name: 'Downloadpage',
+      component: Downloadpage
     }
   ]
 })

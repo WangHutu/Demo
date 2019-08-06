@@ -3,7 +3,7 @@
     <home-headerbar></home-headerbar>
     <home-swiper></home-swiper>
     <home-header></home-header>
-    <flexbar></flexbar>
+    <flexbar v-if="flex"></flexbar>
     <home-main bgcolor="gray" :title="title[0]" :theme="theme.theme1"></home-main>
     <home-main bgcolor="white" :title="title[1]" :theme="theme.theme2"></home-main>
     <bottombar></bottombar>
@@ -20,8 +20,25 @@ import flexbar from '../components/flexbar'
 
 export default {
   name: 'Home',
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll () {
+      let scrollY = window.scrollY
+      if (scrollY >= 600) {
+        this.flex = true
+      } else {
+        this.flex = false
+      }
+    }
+  },
   data () {
     return {
+      flex: false,
       title: [
         '节日设计',
         '党建活动',
@@ -74,6 +91,15 @@ export default {
 </script>
 
 <style>
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html body {
+  background-color: #eee;
+}
 .white {
   background-color: #fff;
 }

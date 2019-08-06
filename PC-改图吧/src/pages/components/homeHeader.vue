@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style>
-* {
+/* * {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -66,7 +66,7 @@ export default {
 }
 html body {
   background-color: #eee;
-}
+} */
 .homeHeader {
   width: 1200px;
   position: absolute;

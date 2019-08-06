@@ -1,5 +1,5 @@
 <template>
-  <div class="flexbar" ref="flex">
+  <div class="flexbar">
     <div class="flexbox">
       <ul class="flexlogo">
         <el-link class="bar" :underline="false">
@@ -42,25 +42,7 @@ export default {
       }
     }
   },
-  mounted () {
-    console.log('flex组件加载')
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  beforeDestroy () {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
-  destroyed () {
-    console.log('flex组件销毁')
-  },
   methods: {
-    handleScroll () {
-      let scrollY = window.scrollY
-      if (scrollY >= 600) {
-        this.$refs.flex.style = 'display:block;'
-      } else {
-        this.$refs.flex.style = 'display:none;'
-      }
-    },
     homepage () {
       this.$router.push({name: 'Home'})
     }
@@ -77,7 +59,7 @@ export default {
   left: 0;
   background-color: #fff;
   z-index: 10;
-  display: none;
+  /* display: none; */
 }
 .flexbar .flexbox {
   width: 1200px;

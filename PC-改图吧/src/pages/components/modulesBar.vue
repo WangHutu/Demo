@@ -4,7 +4,7 @@
       <ul class="box">
         <li>
           <div class="logo">
-            <img src="@/assets/logo_black.png" alt="" @click="homepage">
+            <img src="@/assets/logo_black.png" @click="homepage">
           </div>
         </li>
         <li>

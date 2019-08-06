@@ -12,7 +12,7 @@
         <span>地产广告</span>
       </div>
     </div>
-    <div class="maincontent">
+    <div class="maincontent" @click="download">
       <div class="contentmain">
         <div class="pic" v-for="item in theme" :key="item.id">
           <img class="img" :src="item.imgSrc" alt />
@@ -28,7 +28,13 @@ import bus from '../../assets/Bus'
 
 export default {
   name: 'modulesMain',
+  methods: {
+    download () {
+      this.$router.push({name: 'Downloadpage'})
+    }
+  },
   mounted () {
+    // 获取到modulesHeader组件传过来的数据，并渲染到页面上
     bus.$on('themes', msg => {
       console.log(msg)
       this.theme = msg

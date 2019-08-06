@@ -28,8 +28,11 @@ export default {
   name: 'modulesHeader',
   methods: {
     tabSY (e) {
+      // 获取按钮的名称
       let bunnertext = e.target.innerText
+      // 根据名称获取对应的bunner图，并渲染
       this.modulesdata.bunner = this.message[bunnertext].bunner
+      // 根据名称获取对应分类的作品，传递给modulesMain组件
       bus.$emit('themes', this.message[bunnertext].theme)
     }
   },
