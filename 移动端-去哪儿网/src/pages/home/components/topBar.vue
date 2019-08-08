@@ -7,10 +7,13 @@
       </div>
       <div class="topBar-input">
         <span class="el-icon-search"></span>
-        输入城市/景点/游玩主题</div>
-      <div class="topBar-right">{{city}}
-        <span class="el-icon-caret-bottom topright-icon"></span>
+        输入城市/景点/游玩主题
       </div>
+      <router-link :to='{name: "City"}'>
+        <div class="topBar-right">{{city}}
+          <span class="el-icon-caret-bottom topright-icon"></span>
+        </div>
+      </router-link>
   </div>
 </template>
 
@@ -56,6 +59,7 @@ export default {
       text-align: center
       font-size: 14px
       line-height: 2.75rem
+      color: #fff
       .topright-icon
         margin-left: -.25rem
 </style>
