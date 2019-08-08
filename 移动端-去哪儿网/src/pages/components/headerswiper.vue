@@ -1,7 +1,7 @@
 <template>
   <div class="headerswiper">
     <swiper :options="swiperOption">
-      <swiper-slide v-for="item in swiperimgs" :key="item.id">
+      <swiper-slide v-for="item in list" :key="item.id">
         <img class="swiper-img" :src="item.imgSrc" />
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
@@ -12,6 +12,9 @@
 <script>
 export default {
   name: 'headerSwiper',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
@@ -19,14 +22,7 @@ export default {
         loop: true,
         autoplay: true,
         speed: 1000
-      },
-      swiperimgs: [
-        {id: 1, imgSrc: require('assets/swiper1.jpg')},
-        {id: 2, imgSrc: require('assets/swiper2.jpg')},
-        {id: 3, imgSrc: require('assets/swiper3.jpg')},
-        {id: 4, imgSrc: require('assets/swiper4.jpg')},
-        {id: 5, imgSrc: require('assets/swiper5.jpg')}
-      ]
+      }
     }
   }
 }

@@ -8,7 +8,7 @@
       <div class="topBar-input">
         <span class="el-icon-search"></span>
         输入城市/景点/游玩主题</div>
-      <div class="topBar-right">城市
+      <div class="topBar-right">{{city}}
         <span class="el-icon-caret-bottom topright-icon"></span>
       </div>
   </div>
@@ -16,7 +16,10 @@
 
 <script>
 export default {
-  name: 'topBar'
+  name: 'topBar',
+  props: {
+    city: String
+  }
 }
 </script>
 

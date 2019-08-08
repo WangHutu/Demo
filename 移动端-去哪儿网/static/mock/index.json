@@ -1,0 +1,41 @@
+{
+  "ret": true,
+  "data": {
+    "city": "北京",
+    "swiperList": [
+      {"id": "1", "imgSrc": "static/swiper1.jpg"},
+      {"id": "2", "imgSrc": "static/swiper2.jpg"},
+      {"id": "3", "imgSrc": "static/swiper3.jpg"},
+      {"id": "4", "imgSrc": "static/swiper4.jpg"},
+      {"id": "5", "imgSrc": "static/swiper5.jpg"}
+    ],
+    "iconList": [
+      { "id": "1", "name": "景点门票", "iconSrc": "static/icon1.png" },
+        { "id": "2", "name": "故宫", "iconSrc": "static/icon2.png" },
+        { "id": "3", "name": "北京必游", "iconSrc": "static/icon3.png" },
+        { "id": "4", "name": "水上乐园", "iconSrc": "static/icon4.png" },
+        { "id": "5", "name": "爬长城", "iconSrc": "static/icon5.png" },
+        { "id": "6", "name": "北京欢乐谷", "iconSrc": "static/icon6.png" },
+        { "id": "7", "name": "动植物园", "iconSrc": "static/icon7.png" },
+        { "id": "8", "name": "北京野生动物园", "iconSrc": "static/icon8.png" },
+        { "id": "9", "name": "北京世园会", "iconSrc": "static/icon9.png" },
+        { "id": "10", "name": "考生专享", "iconSrc": "static/icon10.png" }
+    ],
+    "recommendList": [
+      { "id": 1, "title": "北京欢乐谷", "iconSrc": "static/欢乐谷.jpg" },
+        { "id": 2, "title": "古北水镇", "iconSrc": "static/古北水镇.jpg" },
+        { "id": 3, "title": "故宫", "iconSrc": "static/故宫.jpg" },
+        { "id": 4, "title": "八达岭长城", "iconSrc": "static/八达岭长城.jpg" },
+        { "id": 5, "title": "北京动物园", "iconSrc": "static/北京动物园.jpg" },
+        { "id": 6, "title": "金隅凤山温泉", "iconSrc": "static/金隅凤山温泉.jpg" }
+    ],
+    "weekendList": [
+      { "id": 1, "title": "京城周末撒欢", "desc": "在帝都过周末，不仅仅是城中游", "weekSrc": "static/week1.jpg" },
+      { "id": 2, "title": "古北水镇", "desc": "德智体美劳全面发展", "weekSrc": "static/week2.jpg" },
+      { "id": 3, "title": "故宫", "desc": "来北京必去的景点费这些地方莫属", "weekSrc": "static/week3.jpg" },
+      { "id": 4, "title": "八达岭长城", "desc": "轻松水上漂，任我乐逍遥", "weekSrc": "static/week4.jpg" },
+      { "id": 5, "title": "北京动物园", "desc": "到大自然中享受“天然空调”的清凉", "weekSrc": "static/week5.jpg" }
+    ]
+
+  }
+}

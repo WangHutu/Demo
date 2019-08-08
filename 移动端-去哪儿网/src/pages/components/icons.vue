@@ -16,26 +16,13 @@
 <script>
 export default {
   name: 'icons',
-  data () {
-    return {
-      iconsimg: [
-        { id: 1, name: '景点门票', iconSrc: require('assets/icon1.png') },
-        { id: 2, name: '故宫', iconSrc: require('assets/icon2.png') },
-        { id: 3, name: '北京必游', iconSrc: require('assets/icon3.png') },
-        { id: 4, name: '水上乐园', iconSrc: require('assets/icon4.png') },
-        { id: 5, name: '爬长城', iconSrc: require('assets/icon5.png') },
-        { id: 6, name: '北京欢乐谷', iconSrc: require('assets/icon6.png') },
-        { id: 7, name: '动植物园', iconSrc: require('assets/icon7.png') },
-        { id: 8, name: '北京野生动物园', iconSrc: require('assets/icon8.png') },
-        { id: 9, name: '北京世园会', iconSrc: require('assets/icon9.png') },
-        { id: 10, name: '考生专享', iconSrc: require('assets/icon10.png') }
-      ]
-    }
+  props: {
+    iconList: Array
   },
   computed: {
     pages () {
       const pages = []
-      this.iconsimg.forEach((item, index) => {
+      this.iconList.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []

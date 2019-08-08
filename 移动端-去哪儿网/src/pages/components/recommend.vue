@@ -7,7 +7,7 @@
           <img :src="item.iconSrc" class="item-img">
         </div>
         <div class="item-info">
-          <p class="item-title">{{item.name}}}</p>
+          <p class="item-title">{{item.title}}</p>
           <p class="item-desc">欢乐游玩欢乐游玩欢乐游玩欢</p>
           <button class="item-button">查看详情</button>
         </div>
@@ -19,17 +19,8 @@
 <script>
 export default {
   name: 'recommend',
-  data () {
-    return {
-      recommendList: [
-        { id: 1, name: '北京欢乐谷', iconSrc: require('assets/欢乐谷.jpg') },
-        { id: 2, name: '古北水镇', iconSrc: require('assets/古北水镇.jpg') },
-        { id: 3, name: '故宫', iconSrc: require('assets/故宫.jpg') },
-        { id: 4, name: '八达岭长城', iconSrc: require('assets/八达岭长城.jpg') },
-        { id: 5, name: '北京动物园', iconSrc: require('assets/北京动物园.jpg') },
-        { id: 6, name: '金隅凤山温泉', iconSrc: require('assets/金隅凤山温泉.jpg') }
-      ]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
@@ -57,7 +48,8 @@ export default {
         font-size: 1rem
       .item-desc
         line-height: 1.25rem
-        color: #ccc
+        color: #8A8A8A
+        font-size: .8rem
       .item-button
         line-height: 1.375rem
         background: #ff9300
