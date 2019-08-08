@@ -31,14 +31,14 @@ export default {
   @import '~@/assets/styles/varibles.styl';
 // 由于reset.css文件中：1rem = html font-size = 16px;
   .topBar
-    height: 2.75rem
+    height: $topBar
     display: flex
     background: $bgColor
     color: #fff
     .topBar-left
       width: 2rem
       float: left
-      line-height: 2.75rem
+      line-height: $topBar
       text-align: center
       .topleft-icon
         font-size: 1.25rem
@@ -58,7 +58,7 @@ export default {
       float: right
       text-align: center
       font-size: 14px
-      line-height: 2.75rem
+      line-height: $topBar
       color: #fff
       .topright-icon
         margin-left: -.25rem
