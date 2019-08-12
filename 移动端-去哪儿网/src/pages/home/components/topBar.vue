@@ -1,7 +1,7 @@
 <template>
   <div class="topBar">
       <div class="topBar-left">
-        <a href="javascript::">
+        <a href="::">
           <span class="el-icon-arrow-left topleft-icon"></span>
         </a>
       </div>
