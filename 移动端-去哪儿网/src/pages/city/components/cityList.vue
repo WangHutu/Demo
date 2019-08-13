@@ -1,87 +1,62 @@
 <template>
-  <div class="list">
-    <div class="area">
-      <div class="title border-topbottom">当前城市</div>
-      <div class="button-list">
-        <div class="button-wrapper">
-          <div class="button">北京</div>
+  <div class="list" ref="wrapper">
+    <div>
+      <div class="area">
+        <div class="title border-topbottom">当前城市</div>
+        <div class="button-list">
+          <div class="button-wrapper">
+            <div class="button">北京</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">热门城市</div>
-      <div class="button-list">
-        <div class="button-wrapper">
-          <div class="button">北京</div>
-        </div>
-        <div class="button-wrapper">
-          <div class="button">北京</div>
-        </div>
-        <div class="button-wrapper">
-          <div class="button">北京</div>
-        </div>
-        <div class="button-wrapper">
-          <div class="button">北京</div>
-        </div>
-        <div class="button-wrapper">
-          <div class="button">北京</div>
-        </div>
-        <div class="button-wrapper">
-          <div class="button">北京</div>
-        </div>
-        <div class="button-wrapper">
-          <div class="button">北京</div>
-        </div>
-        <div class="button-wrapper">
-          <div class="button">北京</div>
-        </div>
-        <div class="button-wrapper">
-          <div class="button">北京</div>
+      <div class="area">
+        <div class="title border-topbottom">热门城市</div>
+        <div class="button-list">
+          <div class="button-wrapper" v-for="item in hot" :key="item.id">
+            <div class="button">{{item.name}}</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-      </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-      </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-      </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">A</div>
-      <div class="item-list">
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
-        <div class="item border-bottom">阿拉尔</div>
+      <div class="area" v-for="(item,key) in cities" :key="key" :ref="key">
+        <div class="title border-topbottom">{{key}}</div>
+        <div class="item-list" v-for="innerItem in item" :key="innerItem.id">
+          <div class="item border-bottom">{{innerItem.name}}</div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+// 首先引入插件
+import Bscroll from 'better-scroll'
+import bus from '../../../Bus/Bus'
 export default {
-  name: 'cityList'
+  name: 'cityList',
+  data () {
+    return {
+      msg: ''
+    }
+  },
+  props: {
+    hot: Array,
+    cities: Object
+  },
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
+    bus.$on('change', msg => {
+      this.msg = msg
+    })
+  },
+  // 监听器：监听msg的值得变化
+  watch: {
+    msg () {
+      if (this.msg) {
+        const elment = this.$refs[this.msg][0]
+        this.scroll.scrollToElement(elment)
+      }
+    }
+  }
 }
 </script>
 
@@ -104,7 +79,6 @@ export default {
   .button-list
     overflow: hidden
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
     background: #eee
     .button-wrapper
@@ -117,7 +91,6 @@ export default {
         line-height: 2.875rem
         text-align: center
         font-size: 14px
-        padding: auto 0
   .item-list
     .item
       line-height: 1.6875rem

@@ -1,0 +1,470 @@
+{
+  "ret": true,
+  "data": {
+    "hotCities": [{
+      "id": 1,
+      "spell": "beijing",
+      "name": "北京"
+    },{
+      "id": 3,
+      "spell": "shanghai",
+      "name": "上海"
+    },{
+      "id": 47,
+      "spell": "xian",
+      "name": "西安"
+    },{
+      "id": 239,
+      "spell": "sanya",
+      "name": "三亚"
+    },{
+      "id": 125,
+      "spell": "guilin",
+      "name": "桂林"
+    }],
+    "cities": {
+      "A": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "B": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "C": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "D": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "E": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "F": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "G": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "H": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "I": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "J": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "K": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "L": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "M": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "N": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "O": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "p": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "Q": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "R": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "S": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "T": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "U": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "V": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "W": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "X": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "Y": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }],
+      "Z": [{
+        "id": 56,
+        "spell": "aba",
+        "name": "阿坝"
+      },{
+        "id": 57,
+        "spell": "akesu",
+        "name": "阿克苏"
+      },{
+        "id": 58,
+        "spell": "alashanmeng",
+        "name": "阿拉善盟"
+      },{
+        "id": 59,
+        "spell": "aletai",
+        "name": "阿勒泰"
+      }]
+    }
+  }
+}
